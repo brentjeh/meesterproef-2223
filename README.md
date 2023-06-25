@@ -1,8 +1,9 @@
 # Meesterproef Read.me
 
 ## Inhoudsopgave
-- [Briefing](#briefing)
-- [De-briefing](#de-briefing)
+- [Week 1](#week1)
+  - [Briefing](#briefing)
+  - [De-briefing](#de-briefing)
 
 ## Briefing <a name="briefing"></a>
 Op 30 Mei gaan we voor het eerst met de hele groep langs bij onze opdrachtgever in Noord. Om dit voor te bereiden hebben we wat vragen opgesteld.

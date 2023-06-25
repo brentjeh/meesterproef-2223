@@ -32,7 +32,11 @@ Op 30 Mei gaan we voor het eerst met de hele groep langs bij onze opdrachtgever 
 
 ### De-briefing <a name="de-briefing"></a>
 
+#### 
+
 ## Week 2
 
 ### Design Versie 1
-Als eerst ben ik gaan kijken naar hoe onze web app gedesigned zou moeten worden. Ik heb hierbij de core-functionaliteit van de app meegebracht.
+Als eerst ben ik gaan kijken naar hoe onze web app gedesigned zou moeten worden. Ik heb hierbij de core-functionaliteit van de app meegebracht. Wij hebben als team besloten dat de core-functionaliteit is dat de gebruiker binnen de app een regenton kan aanmaken en dat de gebruiker kan zien hoeveel regen er in de regenton valt, zodat de gebruiker tijdig zijn regenton kan legen en er dus geen water wordt verspilt.
+
+Mijn eerste concept houdt hier rekening mee. 

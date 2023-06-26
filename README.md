@@ -77,3 +77,4 @@ Als eerst ben ik gaan kijken naar hoe onze web app gedesigned zou moeten worden.
 Mijn eerste concept houdt hier rekening mee. 
 
 <img src="images-productbio/versie-1/homepage.jpg" height=400px>
+<img src="images-productbio/versie-1/lege-regenton.jpg" height=400px>

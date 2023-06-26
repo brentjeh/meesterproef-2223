@@ -40,6 +40,7 @@ Op 30 Mei gaan we voor het eerst met de hele groep langs bij onze opdrachtgever 
 2.  
 
 ### De-briefing <a name="de-briefing"></a>
+We hebben eerst een de-briefing geschreven om de opdracht de verduidelijken.
 
 #### Achtergrond Informatie <a name="achtergrond-informatie"></a>
 30 Mei zijn we voor het eerst langs geweest bij SPATwater in Noord. Hier hebben we kennis mogen maken met drie van de vier werknemers van SPATwater, namelijk Mees, Mees en Jesse. SPATwater is ontstaan toen Mees en Jesse afstudeerden van de master hydrologie. Ze zijn toen begonnen met het opzetten van het bedrijf. Het bedrijf houdt zich voornamelijk bezig met klimaatadaptatie, een cruciaal onderwerp gezien de toename van hevige regenbuien en periodes van droogte. Normaal gesproken geeft het bedrijf adviezen op het gebied van water aan gemeenten door het hele land, maar nu hebben ze een nieuw project. Hiervoor zijn wij ingeschakeld.

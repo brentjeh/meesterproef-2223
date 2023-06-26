@@ -75,3 +75,5 @@ Er is al een soortgelijke app beschikbaar genaamd Perceelwijzer, waarin je data 
 Als eerst ben ik gaan kijken naar hoe onze web app gedesigned zou moeten worden. Ik heb hierbij de core-functionaliteit van de app meegebracht. Wij hebben als team besloten dat de core-functionaliteit is dat de gebruiker binnen de app een regenton kan aanmaken en dat de gebruiker kan zien hoeveel regen er in de regenton valt, zodat de gebruiker tijdig zijn regenton kan legen en er dus geen water wordt verspilt.
 
 Mijn eerste concept houdt hier rekening mee. 
+
+<img src="images-productbio/versie-1/homepage.jpg" height=400px>

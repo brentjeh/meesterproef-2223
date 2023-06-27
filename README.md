@@ -91,7 +91,8 @@ Dit is de state waarin de regenton geleegd moet worden. De app geeft de gebruike
 Dit is de state waarin de regenton al geleegd is. De app geeft de gebruiker dan een melding dat de regenton niet geleegd kan worden omdat de regenton al geleegd is. <br>
 
 <img src="images-productbio/versie-1/gegevens.jpg" height=400px>
-Op deze pagina kan de gebruiker de gegevens van zijn regenton bekijken. <br>
+Op deze pagina kan de gebruiker de gegevens van zijn regenton bekijken. 
+<br>
 
 <img src="images-productbio/versie-1/menu.jpg" height=400px>
 Dit is een menu wat geopent wordt zodra de gebruiker op het hamburger menu icoon tikt. <br>

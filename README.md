@@ -101,11 +101,11 @@ Dit is een menu wat geopent wordt zodra de gebruiker op het hamburger menu icoon
 ### Design Versie 2 <a name="designv2"></a>
 In week 3 ben ik verder gaan kijken naar hoe ik het design kan verbeteren. Ik heb voorgesteld een onboarding toe te voegen aan het design, zodat de gebruiker een introductie krijgt tot de app en zodat de gebruiker meteen informatie kan invullen over zijn of haar regenton. Hiervoor heb ik het volgende design gemaakt.
 
-<img src="images-productbio/versie-2/onboarding-1.jpg" height=400px width=auto>
-<img src="images-productbio/versie-2/onboarding-2.jpg" height=400px>
-<img src="images-productbio/versie-2/onboarding-3.jpg" height=400px>
-<img src="images-productbio/versie-2/onboarding-4.jpg" height=400px>
-<img src="images-productbio/versie-2/onboarding-5.jpg" height=400px>
+<img src="images-productbio/versie-2/onboarding-1.jpg" width=400px>
+<img src="images-productbio/versie-2/onboarding-2.jpg" width=400px>
+<img src="images-productbio/versie-2/onboarding-3.jpg" width=400px>
+<img src="images-productbio/versie-2/onboarding-4.jpg" width=400px>
+<img src="images-productbio/versie-2/onboarding-5.jpg" width=400px>
 
 ### Onboarding
 Omdat we

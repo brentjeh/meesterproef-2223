@@ -17,7 +17,7 @@
 - [Week 2](#week2)
    - [Design Versie 1](#designv1)
 - [Week 3](#week3)
-   - [Design Versie 1](#designv1)
+   - [Design Versie 2](#designv2)
 
 ## Introductie
 Daniël, Martijn en ik hebben voor de case 'bRAIN' gekozen. bRAIN is het project rondom het koppelen van weerberichten aan wateropvang/gebruik in de tuin.
@@ -73,7 +73,7 @@ Er is al een soortgelijke app beschikbaar genaamd Perceelwijzer, waarin je data 
 
 ## Week 2 <a name="week2"></a>
 
-### Design Versie 1
+### Design Versie 1 <a name="designv1"></a>
 Als eerst ben ik gaan kijken naar hoe onze web app gedesigned zou moeten worden. Ik heb hierbij de core-functionaliteit van de app meegebracht. Wij hebben als team besloten dat de core-functionaliteit is dat de gebruiker binnen de app een regenton kan aanmaken en dat de gebruiker kan zien hoeveel regen er in de regenton valt, zodat de gebruiker tijdig zijn regenton kan legen en er dus geen water wordt verspilt.
 
 Mijn eerste concept houdt hier rekening mee. 
@@ -98,7 +98,14 @@ Dit is een menu wat geopent wordt zodra de gebruiker op het hamburger menu icoon
 
 ## Week 3 <a name="week3"></a>
 
-### Design Versie 2
-Als eerst ben ik gaan kijken naar hoe onze web app gedesigned zou moeten worden. Ik heb hierbij de core-functionaliteit van de app meegebracht. Wij hebben als team besloten dat de core-functionaliteit is dat de gebruiker binnen de app een regenton kan aanmaken en dat de gebruiker kan zien hoeveel regen er in de regenton valt, zodat de gebruiker tijdig zijn regenton kan legen en er dus geen water wordt verspilt.
+### Design Versie 2 <a name="designv2"></a>
+In week 3 ben ik verder gaan kijken naar hoe ik het design kan verbeteren. Ik heb voorgesteld een onboarding toe te voegen aan het design, zodat de gebruiker een introductie krijgt tot de app en zodat de gebruiker meteen informatie kan invullen over zijn of haar regenton. Hiervoor heb ik het volgende design gemaakt.
+
+<img src="images-productbio/versie-2/onboarding-1.jpg" height=400px>
+<img src="images-productbio/versie-2/onboarding-2.jpg" height=400px>
+<img src="images-productbio/versie-2/onboarding-3.jpg" height=400px>
+<img src="images-productbio/versie-2/onboarding-4.jpg" height=400px>
+<img src="images-productbio/versie-2/onboarding-5.jpg" height=400px>
 
 ### Onboarding
+Omdat we

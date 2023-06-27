@@ -99,7 +99,7 @@ Dit is een menu wat geopent wordt zodra de gebruiker op het hamburger menu icoon
 ## Week 3 <a name="week3"></a>
 
 ### Design Versie 2 <a name="designv2"></a>
-In week 3 ben ik verder gaan kijken naar hoe ik het design kan verbeteren. Ik heb voorgesteld een onboarding toe te voegen aan het design, zodat de gebruiker een introductie krijgt tot de app en zodat de gebruiker meteen informatie kan invullen over zijn of haar regenton. Hiervoor heb ik het volgende design gemaakt.
+In week 3 ben ik verder gaan kijken naar hoe ik het design kan verbeteren. Ik heb voorgesteld een onboarding toe te voegen aan het design, zodat de gebruiker een introductie krijgt tot de app en zodat de gebruiker meteen informatie kan invullen over zijn of haar regenton. Hiervoor heb ik het volgende design gemaakt. 
 
 <img src="images-productbio/versie-2/onboarding-1.jpg" height=400px>
 <img src="images-productbio/versie-2/onboarding-2.jpg" height=400px>
@@ -108,4 +108,4 @@ In week 3 ben ik verder gaan kijken naar hoe ik het design kan verbeteren. Ik he
 <img src="images-productbio/versie-2/onboarding-5.jpg" height=400px>
 
 ### Onboarding
-Omdat we
+Ik heb de taak op me genomen om deze onboarding te realiseren aan de hand van HTML, CSS en JavaScript.

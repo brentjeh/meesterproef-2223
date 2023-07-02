@@ -77,13 +77,593 @@ Ik heb een homepage gemaakt waarin de core-functionaliteit centraal staat. De ge
 
 <img src="/images-productbio/versie-1/alles-geheel.png" width:500px>
 
+#### Iteratie 1 Presenteren
+Tijdens de presentatie van week 1 hebben we te horen gekregen dat ze het erg knap vonden dat we al iets met code hadden gedaan. Ze wilden voor de regenton alleen echt een design hebben. Verder waren ze tevreden.
+
 ### Week 2 <a name="week2"></a>
+
+#### Design Versie 
+Ik heb voorgesteld een onboarding toe te voegen aan het design, zodat de gebruiker een introductie krijgt tot de app en zodat de gebruiker meteen informatie kan invullen over zijn of haar regenton. Hiervoor heb ik het volgende design gemaakt.
+
+<img src="/images-productbio/versie-2/onboarding-geheel.png" width:500px>
+
+Daarnaast heb ik nog een pagina toegevoegd waarin gebruikers de feedback krijgen wanneer ze nog geen regenton hebben geïmplementeerd.
+
+#### Onboarding in code
+Ik heb ook de taak op me genomen om de onboarding the maken. Hier heb ik een begin voor gemaakt in HTML. Ik heb hiervoor eerst een structuur geschetst.
+
+<img src="/images-productbio/other/fieldset-inclusief-input.jpg" width:500px>
+<img src="/images-productbio/other/fieldset-inclusief-uitleg.jpg" width:500px>
+
+Daarna ben ik de structuur om gaan zetten tot HTML code. Dit is hoe een fieldset voor de eerste twee schermen in het onboarding proces er uit kwamen te zien. Tijdens het maken van de HTML leek het mij ook een leuk idee om een plaatje toe te voegen aan de eerste twee stappen, om de pagina minder saai te maken en om de uitleg iets visueler te maken voor de gebruiker. Het enige verschil tussen de tweede en eerste pagina van de onboarding is dat de eerste pagina alleen een volgende button heeft, met de logische reden dat de terug button in de eerste pagina gewoon niet nodig is.
+
+```js
+<fieldset id="fieldset1">
+                    <div class="heading-text">
+                        <h1>bRAIN</h1>
+                        <img src="./images/onboarding-image-1.jpg">
+                    </div>
+                    <div class="text-button-progress">
+                        <h2>Welkom</h2>
+                        <label for="volgende">Welkom bij bRAIN! Dit is een app waarin je makkelijk kan zien wanneer je regenton vol raakt. De app geeft je een tijdige waarschuwing wanneer dit gebeurt.</label>
+                        <button class="volgende-button" id="fieldset1-volgende-button">Volgende</button>
+                        <div class="progress">
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                        </div>
+                    </div>
+                </fieldset>
+```
+
+Dit is hoe een fieldset voor de laatste drie schermen in het onboarding proces er uit kwamen te zien. 
+
+```js
+<fieldset id="fieldset4">
+                    <div class="heading-text">
+                        <h1>bRAIN</h1>
+                        <p>Om uit te rekenen hoeveel water er per dag ongeveer in jouw regenton terechtkomt, hebben we wat informatie van je nodig.</p>
+                    </div>
+                    <div class="text-label">
+                        <label for="boardingDak">Hoe groot is je dak in m²?</label>
+                        <input type="number" id="boardingDak" name="boardingDak" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="button-progress">
+                        <div class="buttons">
+                            <button class="terug-button" id="fieldset4-terug-button">Terug</button>
+                            <button class="volgende-button" id="fieldset4-volgende-button">Volgende</button>
+                        </div>
+                        <div class="progress">
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                            <div class="stap"></div>
+                        </div>
+                    </div>
+                </fieldset>
+```
 
 ### Week 3 <a name="week3"></a>
 
+#### Design Versie 3
+In deze versie van het design ben ik vooral gaan focussen op de look en feel van het ontwerp. We hebben gemerkt dat de opdrachtgever dacht dat het design nog iets te lo-fi was. Vandaar dat ik heb besloten om de hele huisstijl om te gooien. Ik heb hiervoor eerst een kleine style guide gemaakt, waarin de opdrachtgever kan zien welke fonts we hebben gebruikt, hoe de knoppen eruit zien, een vers design van de regenton, de kleuren en een eventueel logo.
+
+<img src="/images-productbio/versie-2/huisstijl.jpg" width:500px>
+
+Aan de hand van deze huisstijl ben ik aan het redesign van de onboarding gaan werken. Ik heb hierbij ook een scherm toegevoegd waarin de gebruiker kan selecteren wat voor dak hij of zij in bezit heeft, aangezien dit veel invloed heeft op hoeveel water er terecht komt in de regenton. Dit is hoe de onboarding er nu is uit komen zien:
+
+<img src="/images-productbio/versie-3/onboarding-v3.png" width:500px>
+
+#### Onboarding in code
+
+Na het redesignen van de onboarding ben ik meteen aan de slag gegaan met de CSS inplaats van dat ik eerst de eerste versie van het design ging vormgeven met CSS. Dit is hoe de CSS er uiteindelijk uit kwam te zien:
+
+```css
+.onboarding {
+    width: 85vw;
+    margin: auto;
+}
+
+fieldset {
+    position: relative;
+    border: none;
+}
+
+#fieldset1, #fieldset2 {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: space-between;
+}
+
+#fieldset1 .text-button-progress, #fieldset2 .text-button-progress {
+    display: grid;
+    grid-gap: 1.5em;
+}
+
+#fieldset3, #fieldset4, #fieldset5, #fieldset6 {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-content: space-between;
+}
+
+fieldset h1 {
+    color: var(--dark-blue);
+    font-family: 'Bree Serif', serif;
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+}
+
+fieldset img {
+    width: 100vw;
+}
+
+fieldset .volgende-button {
+    background-color: var(#3498DB);
+}
+
+h2 {
+    padding: 1em;
+    text-align: center;
+}
+
+fieldset h2 {
+    text-align: left;
+    color: var(--dark-blue);
+    font-family: 'Bree Serif', serif;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0;
+}
+
+fieldset label {
+    color: var(--dark-blue);
+    font-family: var(--open-sans);
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+fieldset p {
+    color: var(--dark-blue);
+    font-family: var(--open-sans);
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+fieldset img {
+    width: 100%;
+}
+
+fieldset .button-progress {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    grid-gap: 1.5em;
+}
+
+fieldset .buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.5em;
+}
+
+fieldset .terug-button {
+    color: var(--green);
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4em;
+    background-color: var(--white);
+    border: solid 2px var(--green);
+    border-radius: 20em;
+    width: 100%;
+    height: 3em;
+}
+
+fieldset .volgende-button {
+    color: var(--white);
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4em;
+    background: linear-gradient(var(--green), var(--darker-green));
+    border: none;
+    border-radius: 20em;
+    width: 100%;
+    height: 3em;
+}
+
+fieldset .rondaf-button {
+    color: var(--white);
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4em;
+    background: linear-gradient(var(--green), var(--darker-green));
+    border: none;
+    border-radius: 20em;
+    width: 100%;
+    height: 3em;
+}
+
+fieldset .progress {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    width: 60vw;
+    height: 4em;
+    margin: auto;
+}
+
+fieldset input {
+    font-family: 'Bree Serif', serif;
+    width: 100%;
+    font-size: 1.4em;
+    border-radius: 0.6em;
+    border: none;
+    margin-top: 0.4em;
+    padding: 0.8em;
+    background-color: var(--grey);
+    color: var(--green);
+}
+
+fieldset input:focus {
+    border: none;
+    outline: none;
+}
+
+label[for=boardingDak], label[for=boardingPijpen], label[for=boardingTonnen], label[for=soort-dak] {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4em;
+}
+
+
+#fieldset3 .text-label {
+    width: 100%;
+}
+
+#fieldset3 .label[for=soort-dak] {
+    color: var(--dark-blue);
+    font-family: 'Bree Serif', serif;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 0;
+}
+
+#fieldset3 .text-label .soort-dak {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+    margin-top: 0.4em;
+}
+
+#fieldset3 .plat {
+    grid-column: span 2;
+    text-align: center;
+}
+
+fieldset .punt, .schuin, .plat {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    border-radius: 0.5em;
+    padding: 1em;
+    width: 100%;
+    height: 10em;
+}
+
+label[for=punt], label[for=schuin], label[for=plat] {
+    text-align: center;
+}
+
+label[for=punt] img, label[for=schuin] img, label[for=plat] img {
+    margin-bottom: 0.4em;
+}
+
+fieldset .punt input[type="radio"], .schuin input[type="radio"], .plat input[type="radio"] {
+    display: none;
+}
+
+fieldset .punt:has(input[type="radio"]:checked), .schuin:has(input[type="radio"]:checked), .plat:has(input[type="radio"]:checked) {
+    background-color: #e0e0e0;
+}
+
+#fieldset2, #fieldset3, #fieldset4, #fieldset5, #fieldset6 {
+    display: none;
+}
+```
+
+#### Code review met Joost
+Omdat ik vooral nog bezig was met het design van de applicatie, gaf Joost dringend het advies om de code in te gaan duiken.
+
+#### Design review met Vasilis
+Vasilis leek erg tevreden met het design. Eigenlijk was er in voor dit deel in het proces niet heel veel feedback gegeven.
+
 ### Week 4 <a name="week4"></a>
 
+#### Design Versie 4  
+Ik heb de huisstijl uiteindelijk toegepast op de schermen die we al hadden gemaakt. Dit is hoe alles er uiteindelijk uit heeft komen te zien.
+
+<img src="/images-productbio/versie-3/geheel-zonder-feedback-v3.png" width:500px>
+
+Ik heb wel een aantal dingen aangepast aan de vorige schermen. Bijvoorbeeld, ik heb het menu omgezet van een hamburger menu die open klapt naar een menu dat onderaan het scherm zat. Ik heb deze keuze gemaakt omdat er niet veel links in het menu hoeven te staan, waardoor de gebruiker gewoon via de homepagina naar de gegevens en statistieken pagina kan navigeren. Verder heb ik de statistieken pagina uitgebreid. Ik heb een staafdiagram gemaakt, maar als team hebben we uiteindelijk besloten deze niet mee te nemen in het ontwerp, aangezien het ons onrealistisch leek om dit met code te realiseren in de tijd die we nog over hadden. Verder heb ik een scherm vormgegeven waarin de gebruiker feedback krijgt op basis van hoe vol zijn regenton zit. Hoe meer water er in de regenton blijft zitten, hoe droger de grond wordt. Wanneer het in het echt regent is regent het ook in de app aan de hand van een animatie.
+
+<img src="/images-productbio/versie-3/feedback-v3.png" width:500px>
+
+Dit heb ik samen met Daniel gerealiseerd aan de hand van code. We zijn de regen gif gaan koppelen aan de precipitation sum. Wanneer deze hoger is dan 1mm krijg je de regenanimatie te zien die hierboven ook te zien is. Hieronder zie je de code die we daarvoor hebben gebruikt.
+
+```js
+const isRaining = weatherData.daily.precipitation_sum[0] > 1;
+```
+
+#### Onboarding in code
+Ik ben daarnaast verder gaan werken aan de code voor de onboarding. Ik heb de HTML en CSS afgerond, dus ik ben begonnen met de JavaScript. JavaScript is altijd een uitdaging voor mij, dus ik wist al dat dit best veel tijd ging kosten. Dit is hoe de code er uit is komen te zien. Belangrijk om te weten is dat ik deze code voor een paar dagen niet kon testen, omdat er nog wat problemen in de JavaScript code van Martijn en Daniel zaten die eerst opgelost moesten worden voordat ik de code kon testen.
+
+```js
+const fieldset1 = document.getElementById('fieldset1');
+const fieldset2 = document.getElementById('fieldset2');
+const fieldset3 = document.getElementById('fieldset3');
+const fieldset4 = document.getElementById('fieldset4');
+const fieldset5 = document.getElementById('fieldset5');
+
+const fieldset1VolgendeKnop = document.getElementById('fieldset1-volgende-knop');
+const fieldset2TerugKnop = document.getElementById('fieldset2-terug-knop');
+const fieldset2VolgendeKnop = document.getElementById('fieldset2-volgende-knop');
+const fieldset3TerugKnop = document.getElementById('fieldset3-terug-knop');
+const fieldset3VolgendeKnop = document.getElementById('fieldset3-volgende-knop');
+const fieldset4TerugKnop = document.getElementById('fieldset4-terug-knop');
+const fieldset4VolgendeKnop = document.getElementById('fieldset4-volgende-knop');
+const fieldset5TerugKnop = document.getElementById('fieldset5-terug-knop');
+const fieldset5VolgendeKnop = document.getElementById('fieldset5-volgende-knop');
+
+const fieldsetStap1 = document.getElementById('fieldset-stap1');
+const fieldsetStap2 = document.getElementById('fieldset-stap2');
+const fieldsetStap3 = document.getElementById('fieldset-stap3');
+const fieldsetStap4 = document.getElementById('fieldset-stap4');
+const fieldsetStap5 = document.getElementById('fieldset-stap5');
+
+fieldset1VolgendeKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset1.style.display = "none";
+    fieldset2.style.display = "block";
+
+    fieldsetStap1.style.width = "0.6em";
+    fieldsetStap1.style.height = "0.6em";
+    fieldsetStap1.style.backgroundColor = "#EDEDED";
+    fieldsetStap2.style.width = "1.2em";
+    fieldsetStap2.style.height = "1.2em";
+    fieldsetStap2.style.backgroundColor = "#36A734";
+});
+
+fieldset2TerugKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset1.style.display = "block";
+    fieldset2.style.display = "none";
+
+    fieldsetStap2.style.width = "0.6em";
+    fieldsetStap2.style.height = "0.6em";
+    fieldsetStap2.style.backgroundColor = "#EDEDED";
+    fieldsetStap1.style.width = "1.2em";
+    fieldsetStap1.style.height = "1.2em";
+    fieldsetStap1.style.backgroundColor = "#36A734";
+});
+
+fieldset2VolgendeKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset2.style.display = "none";
+    fieldset3.style.display = "block";
+
+    fieldsetStap2.style.width = "0.6em";
+    fieldsetStap2.style.height = "0.6em";
+    fieldsetStap2.style.backgroundColor = "#EDEDED";
+    fieldsetStap3.style.width = "1.2em";
+    fieldsetStap3.style.height = "1.2em";
+    fieldsetStap3.style.backgroundColor = "#36A734";
+});
+
+fieldset3TerugKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset2.style.display = "block";
+    fieldset3.style.display = "none";
+
+    fieldsetStap3.style.width = "0.6em";
+    fieldsetStap3.style.height = "0.6em";
+    fieldsetStap3.style.backgroundColor = "#EDEDED";
+    fieldsetStap2.style.width = "1.2em";
+    fieldsetStap2.style.height = "1.2em";
+    fieldsetStap2.style.backgroundColor = "#36A734";
+});
+
+fieldset3VolgendeKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset3.style.display = "none";
+    fieldset4.style.display = "block";
+
+    fieldsetStap3.style.width = "0.6em";
+    fieldsetStap3.style.height = "0.6em";
+    fieldsetStap2.style.backgroundColor = "#EDEDED";
+    fieldsetStap4.style.width = "1.2em";
+    fieldsetStap4.style.height = "1.2em";
+    fieldsetStap4.style.backgroundColor = "#36A734";
+});
+
+fieldset4TerugKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset3.style.display = "block";
+    fieldset4.style.display = "none";
+
+    fieldsetStap4.style.width = "0.6em";
+    fieldsetStap4.style.height = "0.6em";
+    fieldsetStap4.style.backgroundColor = "#EDEDED";
+    fieldsetStap3.style.width = "1.2em";
+    fieldsetStap3.style.height = "1.2em";
+    fieldsetStap3.style.backgroundColor = "#36A734";
+});
+
+fieldset4VolgendeKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset4.style.display = "none";
+    fieldset5.style.display = "block";
+
+    fieldsetStap4.style.width = "0.6em";
+    fieldsetStap4.style.height = "0.6em";
+    fieldsetStap4.style.backgroundColor = "#EDEDED";
+    fieldsetStap5.style.width = "1.2em";
+    fieldsetStap5.style.height = "1.2em";
+    fieldsetStap5.style.backgroundColor = "#36A734";
+});
+
+fieldset5TerugKnop.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    fieldset4.style.display = "block";
+    fieldset5.style.display = "none";
+
+    fieldsetStap5.style.width = "0.6em";
+    fieldsetStap5.style.height = "0.6em";
+    fieldsetStap5.style.backgroundColor = "#EDEDED";
+    fieldsetStap4.style.width = "1.2em";
+    fieldsetStap4.style.height = "1.2em";
+    fieldsetStap4.style.backgroundColor = "#36A734";
+});
+```
+
+#### Code review met Robert
+Robert vond dat ik prima onderweg was. Ik wist eerst niet waarom de bovenstaande JavaScript code niet werkte, dus ik vroeg wat mogelijk het probleem was. Hierdoor kwam ik erachter dat er een probleem zat in Martijn en Daniels code. Verder kon de bovenstaande code volgens Robert veel korter.
+
+#### Design review met Sanne
+Omdat we zo goed als aan het einde van het maken van het ontwerp waren, konden we goed feedback krijgen op wat we hadden om te zien waar mogelijke verbeteringen in zaten. Als eerst gaf Sanne mij de feedback om het menu om te zetten naar een hub and spoke menu. Dit houdt in dat het menu onderaan verdwijnt zodra er bijvoorbeeld op de 'gegevens' icoon wordt getikt. In plaats van het menu verschijnt er dan een pijltje linksboven het scherm. Zodra de gebruiker op dit pijltje klikt wordt hij terug gebracht naar de homepagina. De logica achter dit is dat er meer schermruimte vrij komt en omdat het toch niet vaak voorkomt dan de gebruiker van bijvoorbeeld de gegevens pagina naar de statistieken pagina gaat.
+
+<img src="/images-productbio/other/hub-and-spoke.png" width:500px>
+
+Verder was het belangrijk om na te denken over hoe we het menu implementeren in iOS of Android. Android mobielen hebben namelijk een menu onderaan het scherm staan waarmee de gebruiker terug kan naar een andere pagina. Op iOS staat dit vaak linksboven het scherm in de vorm van een pijl terug. Ook was het handig om na te denken over hoe we gebruiker kunnen helpen met het meten van zijn dak. Nu is het nogal onduidelijk voor de gebruiker hoe hij dat zou moeten doen. Verder was het volgens Sanne niet nodig om in de gegevens pagina de gegevens te kunnen aanpassen, maar dat er een knop onder de gegevens staat die de gebruiker weer terug leid naar de onboarding, waarin hij op deze manier zijn gegevens weer kan aanpassen. Dit was volgens Sanne beter omdat de gebruiker toch haast nooit zijn gegevens gaat veranderen.
+
 ### Week 5 <a name="week5"></a>
+
+#### Onboarding in code
+Na dat Martijn en Daniel de stuk code die problemen veroorzaakte voor mijn onboarding code, ben ik de code voor mijn onboarding gaan kunnen testen. Ik werd helaas teleurgesteld want de code werkte niet. Dus ik moest een nieuwe aanpak bedenken.
+
+Eerst ben ik alle fieldsets en stappen binnen de DOM gaan opslaan. 'let currentFieldsetIndex = 0;' initialiseert de variabele currentFieldsetIndex met de waarde 0. Deze variabele houdt bij welk fieldset momenteel wordt weergegeven.
+
+```js
+const fieldsets = document.querySelectorAll('fieldset');
+const stappen = document.querySelectorAll('.stap');
+let currentFieldsetIndex = 0;
+```
+
+Hieronder staat een functie genaamd showFieldset die een index als parameter accepteert. Deze functie wordt gebruikt om een specifiek fieldset te tonen op basis van de opgegeven index. 'fieldsets.forEach' voert een forEach-lus uit op de fieldsets-array. Voor elk fieldset wordt de meegeleverde callback-functie uitgevoerd. 'if (i === index) { ... } else { ... }' controleert of de huidige iteratie-index overeenkomt met de opgegeven index. Als dat het geval is, wordt het fieldset weergegeven door de display-eigenschap in te stellen op 'grid' en wordt de currentFieldsetIndex bijgewerkt. Anders wordt het fieldset verborgen door de display-eigenschap in te stellen op 'none'. 'updateProgress()' roept de functie updateProgress aan om de voortgangsbalk bij te werken.
+
+```js
+function showFieldset(index) {
+    fieldsets.forEach((fieldset, i) => {
+        if (i === index) {
+        fieldset.style.display = 'grid';
+        currentFieldsetIndex = index; 
+        } else {
+        fieldset.style.display = 'none';
+        }
+    });
+
+    updateProgress();
+}
+```
+
+Hieronder staat een functie genaamd 'nextFieldset' die wordt uitgevoerd wanneer er op de volgende knop wordt geklikt. Deze functie controleert of er een volgend fieldset is en roept vervolgens de showFieldset-functie aan om het volgende fieldset weer te geven. 'if (currentFieldsetIndex < fieldsets.length - 1) { ... }' controleert of de huidige fieldsetindex kleiner is dan de totale lengte van fieldsets. Dit zorgt ervoor dat de volgende knop alleen werkt als er een volgend fieldset is. 'const isFormValid = validateForm();' roept de functie validateForm aan en slaat het resultaat op in de constante isFormValid. Deze functie controleert of het huidige formulier geldige gegevens bevat. 'currentFieldsetIndex++; showFieldset(currentFieldsetIndex); updateProgress();' verhoogt de waarde van currentFieldsetIndex, roept de showFieldset-functie aan om het volgende fieldset weer te geven en roept vervolgens de updateProgress-functie aan om de voortgangsbalk bij te werken. '
+
+```js
+function nextFieldset() {
+    if (currentFieldsetIndex < fieldsets.length - 1) {
+      const isFormValid = validateForm(); 
+  
+      if (isFormValid) {
+        currentFieldsetIndex++;
+        showFieldset(currentFieldsetIndex);
+        updateProgress();
+      } 
+    }
+  } 
+```
+
+Hieronder staat een functie genaamd 'previousFieldset' die wordt uitgevoerd wanneer er op de vorige knop wordt geklikt. Deze functie controleert of er een vorig fieldset is en roept vervolgens de showFieldset-functie aan om het vorige fieldset weer te geven. 'if (currentFieldsetIndex > 0) { ... }' controleert of de huidige fieldsetindex groter is dan 0. Dit zorgt ervoor dat de terugknop alleen werkt als er een vorig fieldset is. 
+
+```js
+function previousFieldset() {
+    if (currentFieldsetIndex > 0) {
+        currentFieldsetIndex--;
+        showFieldset(currentFieldsetIndex);
+        updateProgress();
+    }
+}
+```
+
+'const volgendeButtons = document.querySelectorAll('.volgende-button');' selecteert alle elementen met de klasse 'volgende-button' op de pagina en slaat ze op in de constante 'volgendeButtons'. 'volgendeButtons.forEach((button) => { ... })' voegt een event listener toe aan elk element in volgendeButtons. De event listener reageert op een klik op de knop en roept de functie nextFieldset aan. 'const terugButtons = document.querySelectorAll('.terug-button');' selecteert alle elementen met de klasse 'terug-button' op de pagina en slaat ze op in de constante terugButtons. 'terugButtons.forEach((button) => { ... })' voegt een event listener toe aan elk element in terugButtons. De event listener reageert op een klik op de knop en roept de functie previousFieldset aan. 'const rondAfButton = document.getElementById('rondaf-button');' selecteert het element met de id 'rondaf-button' en slaat het op in de constante rondAfButton. 'if (rondAfButton) { ... }' controleert of rondAfButton een waarde heeft. Dit zorgt ervoor dat de code binnen de blokhaak alleen wordt uitgevoerd als er een element is gevonden met de id 'rondaf-button'. 'rondAfButton.addEventListener('click', function(event) { ... })' voegt een event listener toe aan het element met de id 'rondaf-button'. De event listener reageert op een klik op de knop en voert de meegeleverde callback-functie uit. 'const isFormValid = validateForm();' roept de functie validateForm aan en slaat het resultaat op in de constante isFormValid. Deze functie controleert of het huidige formulier geldige gegevens bevat. 'if (!isFormValid) { ... }' controleert of het formulier ongeldige gegevens bevat. Als dat het geval is, wordt het standaardgedrag van de knop voorkomen en wordt de functie beëindigd.
+
+```js
+const volgendeButtons = document.querySelectorAll('.volgende-button');
+    volgendeButtons.forEach((button) => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        nextFieldset();
+    });
+});
+
+const terugButtons = document.querySelectorAll('.terug-button');
+    terugButtons.forEach((button) => {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+        previousFieldset();
+    });
+});
+
+const rondAfButton = document.getElementById('rondaf-button');
+if (rondAfButton) {
+  rondAfButton.addEventListener('click', function(event) {
+  const isFormValid = validateForm();
+
+  if (!isFormValid) {
+    event.preventDefault();
+    return; 
+  }
+});
+}
+```
+
+Hieronder staat een functie genaamd 'validateForm' die wordt gebruikt om het huidige fieldset te valideren. De functie controleert of alle invoervelden zijn ingevuld en retourneert een boolean-waarde die aangeeft of het formulier geldig is.
+
+```js
+function validateForm() {
+    const currentFieldset = fieldsets[currentFieldsetIndex];
+    const inputs = currentFieldset.querySelectorAll('input');
+    const errorMessages = currentFieldset.querySelectorAll('.error-message');
+    let isValid = true;
+    
+    for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].value === '') {
+        errorMessages[i].textContent = 'Dit veld moet worden ingevuld';
+        isValid = false;
+      } else {
+        errorMessages[i].textContent = '';
+      }
+    }
+    
+    return isValid;
+  }
+```
+
+Aan de hand van Roberts feedback heb ik de code ingekort.
+
+#### Feedback van SPATwater op ons eindproduct en teamwerking
+Dit team heeft in korte tijd een goed werkend product afgeleverd en de verwachtingen (bovengemiddeld) waargemaakt. Feedback werd goed meegenomen en er is in het product veel aandacht geweest voor verlangd design. Er zitten in het product wel verbeterpunten om tot een eindproduct te komen, maar de core-functionaliteit werkt grotendeels. Alleen het aanpassen van gegevens werkt nog niet optimaal, wat wel core-functionaliteit werd geacht, zoals de grootte van de regenton. Desondanks heeft het team bovengemiddeld gepresteerd en een product afgeleverd waar we als opdrachtgever verder mee kunnen om te voldoen aan de vragen van onze klanten. Het design en animaties sloten aan bij onze wens. Heel erg bedankt team! We zijn erg tevreden.
 
 ## Reflectie <a name="reflectie"></a>
 

@@ -41,32 +41,39 @@ Samen met Daniel en Martijn heb ik aan de de-briefing gezeten. We hebben dit ged
 ##### Contactgegevens
 Timo van den Berg t.vdberg@spatwater.nl Mees van Milligen de Wit m.vmilligen@spatwater.nl Jesse Schoenmakers j.schoenmakers@spatwater.nl
 
-Achtergrondinformatie
+##### Achtergrondinformatie
 30 Mei zijn we voor het eerst langs geweest bij SPATwater in Noord. Hier hebben we kennis mogen maken met drie van de vier werknemers van SPATwater, namelijk Mees, Mees en Jesse. SPATwater is ontstaan toen Mees en Jesse afstudeerden van de master hydrologie. Ze zijn toen begonnen met het opzetten van het bedrijf. Het bedrijf houdt zich voornamelijk bezig met klimaatadaptatie, een cruciaal onderwerp gezien de toename van hevige regenbuien en periodes van droogte. Normaal gesproken geeft het bedrijf adviezen op het gebied van water aan gemeenten door het hele land, maar nu hebben ze een nieuw project. Hiervoor zijn wij ingeschakeld.
 
-Opdrachtomschrijving
+##### Opdrachtomschrijving
 SpatWater wilt een applicatie waarin gebruikers een regenton kunnen instellen. Aan de hand van de locatie en het weer wordt de regenton digitaal gevuld, en weet de gebruiker de hoeveelheid water in de regenton. Veel water raakt namelijk verloren in het riool door dat regenpijpen rechtstreeks het riool in gaan. Met deze oplossing wordt er meer water afgevoerd in de grond en wordt er ook minder drinkwater verspilt.
 
-Aanleiding
+##### Aanleiding
 Omdat het klimaat zo aan het veranderen is en er tegenwoordig steeds hevigere regenbuien zijn en periodes van droogtes, wilt onze opdrachtgever meer gebruik gaan maken van regentonnen. Dit om meer regenwater op te vangen en dit in de tuin te laten lopen. Het is namelijk zo dat veel van het regenwater nu het riool inloopt en vervolgens wordt gedumpt in sloten en rivieren. Hierdoor verdwijnt het water uiteindelijk in de zee en wordt het zout. Het is dus beter als het regenwater bijvoorbeeld voor het besproeien van de tuin wordt gebruikt en in het grondwater verdwijnt.
 
-Projectdoel
+##### Projectdoel
 SPATwater heeft ons gevraagd een applicatie te ontwikkelen waarbij bewoners een regenton kunnen instellen en met deze applicatie kunnen zien hoeveel regenwater zij hebben opgevangen in de regenton. Hiermee krijgen de bewoners hulp bij het beheren van de opslag van het regenwater. Er zal een melding worden verstuurd wanneer de regenton geleegd moet worden zodat er maximaal water kan worden opgevangen en minder water wordt verspild.
 
-Doelstelling
+##### Doelstelling
 De doelstelling van het bedrijf is het voorkomen van waterverspilling doormiddel van het gebruik van regentonnen of andere klimaatbewuste implementeringen. Ook willen ze de kwaliteit van water zo goed houden als mogelijk in Nederland.
 
-Oplevering
+##### Oplevering
 De applicatie zal de weersvoorspellingen van openMeteo integreren om te kunnen anticiperen op komende regenbuien. Gebruiksvriendelijkheid is hierbij cruciaal; we willen dat de tool makkelijk te gebruiken en visueel aantrekkelijk is. Het prototype moet indrukwekkend zijn - we willen de bewoners omverblazen met ons idee. De app moet tijdig meldingen sturen wanneer de regenton vol dreigt te raken. Ook moet de gemeente Amsterdam
 
-Randvoorwaarden
+##### Randvoorwaarden
 Het project zal ook uitdagingen met zich meebrengen, zoals het bepalen of het dak schuin of plat is. Hiermee krijg je te maken met verdamping van water waardoor de accuraatheid van de hoeveelheid water in de regenton moeilijker te bepalen wordt. Hierdoor kunnen verkeerde voorspellingen worden gemaakt. Ook kan het zijn dat er meerdere regenpijpen zijn en dat niet elke regenpijp is aangesloten op een regenton. De bewoners staan centraal en hier moet ook op gefocust worden. Als de applicatie niet fijn te gebruiken is door bewoners is het niet functioneel.
 
-Gebruikers van het eindresultaat
+##### Gebruikers van het eindresultaat
 Onze gebruikers van het eindresultaat zullen klimaatbewust bezig zijn met water. Ze verspillen minder drinkwater en zorgen ervoor dat er meer grondwater in de grond komt. Hierdoor dragen ze bij aan een verbeterd milieu. De bewoners staan centraal en dit is ook de gebruiker. Ook de gemeente Amsterdam moet inzicht kunnen hebben echter moeten we focussen op de gebruiker.
 
-Relatie met andere projecten
+##### Relatie met andere projecten
 Er is al een soortgelijke app beschikbaar genaamd Perceelwijzer, waarin je data kan krijgen over verschillende percelen in Nederland. Denk hierbij aan bijvoorbeeld neerslag maar ook of er gemaaid mag worden. Deze app maakt dus al gebruik van het aantal mm neerslag dat er per perceel valt. Wij zullen ook zoiets moeten integreren, maar wij gebruiken hiervoor de KNMI API.
+
+#### Het begin van het design
+Als eerst ben ik gaan kijken naar hoe onze web app gedesigned zou moeten worden. Ik heb hierbij de core-functionaliteit van de app meegebracht. Wij hebben als team besloten dat de core-functionaliteit is dat de gebruiker binnen de app een regenton kan aanmaken en dat de gebruiker kan zien hoeveel regen er in de regenton valt, zodat de gebruiker tijdig zijn regenton kan legen en er dus geen water wordt verspilt.
+
+Mijn eerste concept houdt hier rekening mee.
+
+Ik heb een homepage gemaakt waarin de core-functionaliteit centraal staat. De gebruiker kan zien hoeveel water er in zijn regenton zit, en kan de regenton legen zodra deze vol begint te raken. Ik heb ook een state gemaakt waarin de de regenton leeg is. Daarnaast is er een state dat de regenton geleegd moet worden. De app geeft de gebruiker dan een melding dat de regenton bijna vol is, en dat deze geleegd moet worden voordat het water verspilt wordt. Verder hebben we een state toegevoegd waar de regenton al leeg is. De app geeft de gebruiker dan een melding dat de regenton niet geleegd kan worden omdat de regenton al geleegd is. Vervolgens heb ik een pagina gemaakt waar de gebruiker kan kijken naar de gegevens van de regenpijpen die aangesloten zijn aan zijn regenton, de hoeveelheid regentonnen en hoeveel liter deze bevatten en hoe groot zijn dak is. Als laatst heb ik een menu toegevoegd waarin de gebruiker naar andere delen van de app kan navigeren.
 
 ### Week 2 <a name="week2"></a>
 

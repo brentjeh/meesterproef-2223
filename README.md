@@ -8,7 +8,7 @@
   - [Week 3](#week3)
   - [Week 4](#week4)
   - [Week 5](#week5)
-- [Reflectie](#reflectie)-
+- [Reflectie](#reflectie)
   - [Het proces](#proces)
   - [Hoe mijn team en ik de lesstof uit de vakken heb ingezet](#lesstof)
   - [Waar ik in ben verbeterd](#geleerd)

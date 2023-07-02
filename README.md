@@ -1,4 +1,4 @@
-# Meesterproef Read.me
+# Meesterproef Productbio Brent Duineveld
 
 ## Inhoudsopgave
 - [Introductie](#introductie)

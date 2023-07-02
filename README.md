@@ -75,6 +75,8 @@ Mijn eerste concept houdt hier rekening mee.
 
 Ik heb een homepage gemaakt waarin de core-functionaliteit centraal staat. De gebruiker kan zien hoeveel water er in zijn regenton zit, en kan de regenton legen zodra deze vol begint te raken. Ik heb ook een state gemaakt waarin de de regenton leeg is. Daarnaast is er een state dat de regenton geleegd moet worden. De app geeft de gebruiker dan een melding dat de regenton bijna vol is, en dat deze geleegd moet worden voordat het water verspilt wordt. Verder hebben we een state toegevoegd waar de regenton al leeg is. De app geeft de gebruiker dan een melding dat de regenton niet geleegd kan worden omdat de regenton al geleegd is. Vervolgens heb ik een pagina gemaakt waar de gebruiker kan kijken naar de gegevens van de regenpijpen die aangesloten zijn aan zijn regenton, de hoeveelheid regentonnen en hoeveel liter deze bevatten en hoe groot zijn dak is. Als laatst heb ik een menu toegevoegd waarin de gebruiker naar andere delen van de app kan navigeren.
 
+<img src="/images-productbio/versie-1/alles-geheel.png" width:500px>
+
 ### Week 2 <a name="week2"></a>
 
 ### Week 3 <a name="week3"></a>

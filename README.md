@@ -8,7 +8,10 @@
   - [Week 3](#week3)
   - [Week 4](#week4)
   - [Week 5](#week5)
-- [Door de weken heen](#weken)
+- [Reflectie](#reflectie)-
+  - [Het proces](#proces)
+  - [Hoe mijn team en ik de lesstof uit de vakken heb ingezet](#lesstof)
+  - [Waar ik in ben verbeterd](#geleerd)
 
 ## Introductie <a name="introductie"></a>
 Daniël, Martijn en ik hebben voor de case 'bRAIN' gekozen. bRAIN is het project rondom het koppelen van weerberichten aan wateropvang/gebruik in de tuin.
@@ -667,10 +670,10 @@ Dit team heeft in korte tijd een goed werkend product afgeleverd en de verwachti
 
 ## Reflectie <a name="reflectie"></a>
 
-### Het proces 
+### Het proces <a name="proces"></a>
 Ik vond het spannend om de meesterproef aan te gaan aangezien ik niet helemaal wist wat ik moest verwachten. Alhoewel ik bijna alle vakken gehaald heb, had elke vak zijn eigen uitdagingen, en ik wist dat elk vak in principe overnieuw doen niet makkelijk ging worden. Gelukkig kan ik zeggen dat ik met mijn team een goed product heb neergezet. De hele minor werk je in je eentje, dus om in teamverband aan de gang te gaan moest je de opdracht wel op een andere manier aanpakken. We hebben bijvoorbeeld gebruik gemaakt van de SCRUM methode om taken te verdelen en om bij te houden wie wat nog moet doen en wat er in het geheel nog gedaan moet worden. Op deze manier hebben we naar mijn idee goed de taken verdeeld. Er waren duidelijk wel wat mensen meer gespecialiseerd in het een dan in het ander. Maar hierdoor konden we wel de taken verdelen op een manier dat iedereen gemotiveerd te werk kon gaan. Ik heb leren omgaan met Figma en ik hoe ik het best me kan voorbereiden op het schrijven van code, omdat ik eerst altijd maar gewoon meteen de code in duik, in plaats van een goed beeld te vormen hoe ik het ontwerp ga neerzetten. Dit bespaarde me tijd.
 
-### Hoe mijn team en ik de lesstof uit de vakken heb ingezet
+### Hoe mijn team en ik de lesstof uit de vakken heb ingezet <a name="lesstof"></a>
 
 #### Web App from Scratch
 Ik heb veel werk gestopt in het vormgeven van de applicatie. Ik heb hierbij verschillende design principes gebruikt. Ik heb voor de structuur van mijn HTML eerst een schets gemaakt, zodat ik niet tijdens het proces problemen krijg met elementen die ik nog in de HTML moet zetten. Ik heb aan de hand van een API een regen animatie werkend laten krijgen.
@@ -690,5 +693,5 @@ In onze applicatie wordt er gebruik gemaakt van een server-side API en een Mongo
 #### Human Centered Design
 We zijn wekelijks langs geweest (fysiek en online) bij de opdrachtgever om feedback te verzamelen op ons product en om ons product te laten testen. Deze feedback hebben we elke keer meegenomen in ons product. Verder staat de gebruiker in ons product centraal.
 
-### Waar ik in ben verbeterd
+### Waar ik in ben verbeterd <a name="geleerd"></a>
 Dankzij deze minor heb ik weer een opfrissing gehad in het schrijven van code. Ik wilde mezelf hier vele malen in verbeteren, in de hoop dat ik de dingen die ik geleerd heb toe kan passen in bijvoorbeeld het maken van web applicaties. Ik moet zeggen dat ik tijdens deze minor vooral heb gemerkt dat ik totaal geen achtergrond had in specifiek JavaScript. Ik dacht dat ik de basis kennis had, maar dit was duidelijk niet zo. Hierdoor liep ik wel erg vaak tegen blokken binnen de opdrachten die vooral gefocust waren op JavaScript, zoals Real Time Web en Progressive Web Apps. Ik heb wel geleerd hoe ik een applicatie omzet van client side naar server side. Ik heb geleerd hoe ik een API kan implementeren. Ik heb geleerd hoe ik aan de hand van progressive enhancement mijn websites beter beschikbaar kan maken voor iedereen die het web gebruikt. Ik heb geleerd hoe ik met een echt blind persoon kan werken en hoe ik dit persoon haar problemen kan oplossen aan de hand van een ontwerp. Ik heb geleerd met sockets te werken. Ik heb in de opleiding zelfs ruimte gehad om mijn vormgeving vaardigheden te verbeteren. Omdat ik zelf erg onervaren ben met specifiek JavaScript, heb ik wel het idee gehad dat ik te weinig tijd had om echt dieper in de lesstof te gaan, waardoor ik wel het idee heb dat ik nog een stuk meer moet oefenen om echt alles wat ik geleerd heb foutloos te kunnen implementeren. Al met al heb ik mijn code vaardigheden een stuk kunnen verbeteren.
